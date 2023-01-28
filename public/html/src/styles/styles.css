@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: rgb(203, 211, 211);
+  color: #000;
+}
+
+.toDo {
+  display: block;
+  width: 600px;
+  min-height: 100%;
+  margin: 20px auto;
+  padding: 0.25rem 0;
+  background-color: #66bb6a;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.titelLabel h1 {
+  margin: 1rem auto;
+  width: 100%;
+  text-align: center;
+  -webkit-text-decoration-line: #080708;
+          text-decoration-line: #080708;
+  -moz-text-decoration-line: #080708;
+}
+
+.massage {
+  margin: 0 auto;
+  padding: 3px 10px;
+  border: 2px solid green;
+  border-radius: 0.5rem;
+  text-align: center;
+  width: 80%;
+  font-size: 16px;
+  color: black;
+  display: none;
+}
+
+.showMassage {
+  display: block;
+  overflow: hidden;
+}
+
+.formSubmit {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 65% auto auto auto;
+  gap: 5px;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formSubmit input[type=text] {
+  justify-items: center;
+  font-size: 0.9rem;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+}
+
+.formSubmit button {
+  padding: 0.25rem 1rem;
+  border-radius: 10%;
+  border: 1px solid black;
+  background: transparent;
+  width: 100%;
+  cursor: pointer;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+.line {
+  display: block;
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin: 1rem 0 auto auto;
+}
+
+.items {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+}
+
+.item {
+  margin: 0.75rem auto;
+  width: 100%;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto 80% auto;
+  padding: 5px 15px;
+  background-color: #bec2c1;
+  border-radius: 0.5rem;
+  align-items: right;
+  transition: 0.6s linear;
+  -webkit-transition: 0.6s linear;
+  -moz-transition: 0.6s linear;
+  -ms-transition: 0.6s linear;
+  -o-transition: 0.6s linear;
+}
+
+.item h4 {
+  overflow: hidden;
+}
+
+.itemChecked {
+  text-decoration: line-through;
+}
+
+.important {
+  color: red;
+  font-size: 1rem;
+}
+
+.goOut {
+  width: 1px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" -10, "opsz" 48;
+  width: auto;
+  justify-self: right;
+  cursor: pointer;
+}
+
+.round {
+  position: relative;
+  padding-right: 8px;
+}
+
+.round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+
+.round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 4px;
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  transform: rotate(-45deg);
+  width: 10px;
+}
+
+.round input[type=checkbox] {
+  visibility: hidden;
+}
+
+.round input[type=checkbox]:checked + label {
+  background-color: #66bb6a;
+  border-color: #66bb6a;
+}
+
+.round input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+.logo {
+  width: 100%;
+  margin-top: 5px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  .toDo {
+    width: 99%;
+    margin: 0;
+    padding: 0 5px;
+    height: 100%;
+  }
+  .formSubmit {
+    width: 100%;
+    gap: 0;
+    grid-template-columns: 50% auto auto auto;
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=styles.css.map */

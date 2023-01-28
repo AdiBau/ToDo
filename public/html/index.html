@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ToDo MegaK</title>
+    <link rel="shortcut icon" href="./src/styles/400_609bb5e2d9a39.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <section class="toDo">
+      <div class="logo">
+        <img src="./src/styles/400_609bb5e2d9a39.webp" width="50px" height="auto" />
+        <p>Logo zaczerpnięte z strony <a href="https://www.megak.pl">https://www.megak.pl</a></p>
+      </div>
+      <section class="titelLabel">
+        <h1>To Do list for MegaK v.3</h1>
+        <hr />
+      </section>
+      <form class="formSubmit">
+        <input class="formInput" maxlength="100" title="prohibited characters:   > $" id="item" type="text" name="item" required placeholder="please type something" />
+        <p>Important</p>
+        <div class="round">
+          <input type="checkbox" id="important" />
+          <label for="important"></label>
+        </div>
+        <button type="submit">Add</button>
+      </form>
+      <div class="massage"></div>
+      <span class="line"></span>
+
+      <div class="items"></div>
+    </section>
+
+    <script src="./src/main.js"></script>
+    <script src="./src/massage.js"></script>
+    <script src="./src/isValidate.js"></script>
+  </body>
+</html>
