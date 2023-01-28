@@ -23,6 +23,6 @@ app.use(notFound)
 
 try {
   app.listen(port, () => {
-    console.log('Server działa :) ', ` http://192.168.1.123:${port}`)
+    console.log('Server działa :) ', ` http://127.0.0.1:${port}`)
   })
 } catch (error) {}
