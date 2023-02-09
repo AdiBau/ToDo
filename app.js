@@ -2,7 +2,7 @@ const express = require('express')
 const router = require('./router/router')
 const path = require('path')
 
-const notFound = require('./controlers/notfound')
+const notFound = require('./controlers/notFound')
 
 const app = express()
 
